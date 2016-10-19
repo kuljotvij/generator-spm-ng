@@ -1,1 +1,1 @@
-.container { background-color: antiquewhite;}
+<% if(bootstrap) { %> #tkb-body { background-color: antiquewhite;} <% } %>
