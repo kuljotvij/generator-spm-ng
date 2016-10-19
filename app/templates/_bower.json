@@ -17,8 +17,8 @@
   "dependencies": {
     "jquery": "^2.1.1",
     "angular": "^1.2.16",
-    "angular-route": "^1.2.16",
-    "ngForce": "https://github.com/kuljotvij/ngForce-one.git#master"<% if(bootstrap) { %>,
+    "angular-route": "^1.2.16"<% if(ngforce) { %>,
+    "ngForce": "https://github.com/kuljotvij/ngForce-one.git#master"<% } %> <% if(bootstrap) { %>,
     "bootstrap": "https://github.com/twbs/bootstrap.git"<% } %>
   }
 }

@@ -9,7 +9,7 @@ angular.module('<%= appName %>', [ 'ngRoute','<%= appName %>-main','templates' ]
   });
 
 
-angular.module('<%= appName %>-main',['ngRoute', 'ngForce'])
+angular.module('<%= appName %>-main',['ngRoute'<% if(ngforce) { %>, 'ngForce'<% } %>])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

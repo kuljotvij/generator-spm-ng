@@ -34,12 +34,18 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
         type: 'confirm',
         name: 'bootstrap',
         message: 'Include Bootstrap?',
-        default: true
+        default: false
+      }, {
+        type: 'confirm',
+        name: 'ngforce',
+        message: 'Include ngForce?',
+        default: false
       }];
 
     this.prompt(prompts, function (props) {
       this.appName = props.appName;
       this.bootstrap = props.bootstrap;
+      this.ngforce = props.ngforce;
       done();
     }.bind(this));
   },
