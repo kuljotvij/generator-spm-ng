@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title><%= appName %></title>
-    <link href="styles/lib.css" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/lib.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <% if(slds) { %>
+      <link href="assets/styles/salesforce-lightning-design-system-vf.css" rel="stylesheet" />
+    <% } %>   
   </head>
   <body>
-    <div id="tkb" ng-app="<%= appName %>">
-      <div id="tkb-body">
-        <div class="container" ng-view="ng-view"></div>
-      </div>
+    <div <% if(bootstrap) { %> id="tkb" <% } %> ng-app="<%= appName %>">
+        <div <% if(bootstrap) { %> id="tkb-body" class="container" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
     </div>
     <script src="scripts/lib.js"></script>
     <script src="scripts/templates.js"></script>
