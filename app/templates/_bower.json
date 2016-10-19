@@ -20,6 +20,6 @@
     "angular-route": "^1.2.16"<% if(ngforce) { %>,
     "ngForce": "https://github.com/kuljotvij/ngForce-one.git#master"<% } %> <% if(bootstrap) { %>,
     "bootstrap": "https://github.com/kuljotvij/ui-tkb-bootstrap.git"<% } %> <% if(slds) { %>,
-    "salesforce-lightning-design-system": "https://github.com/kuljotvij/slds-ng-gulp"<% } %>
+    "salesforce-lightning-design-system": "https://github.com/kuljotvij/slds-ng-gulp.git"<% } %>
   }
 }
