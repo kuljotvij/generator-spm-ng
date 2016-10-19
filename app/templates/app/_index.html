@@ -12,7 +12,7 @@
   </head>
   <body>
     <div <% if(bootstrap) { %> id="tkb" <% } %> ng-app="<%= appName %>">
-        <div <% if(bootstrap) { %> id="tkb-body" class="container" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
+        <div <% if(bootstrap) { %> id="tkb-body" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
     </div>
     <script src="scripts/lib.js"></script>
     <script src="scripts/templates.js"></script>
