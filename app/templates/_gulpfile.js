@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var plugins = require("gulp-load-plugins")({lazy:false});
-var gulpBowerFiles = require('gulp-bower-files');
+var mainBowerFiles = require('main-bower-files');
 var gutil = require('gulp-util');
 var gulpFilter = require('gulp-filter');
 var path = require('path');
@@ -40,7 +40,9 @@ gulp.task('css', function(){
 });
 
 gulp.task('vendorJS', function(){
-    gulpBowerFiles()
+    return gulp.src(mainBowerFiles(), {
+            base: './bower_components'
+    })
     .pipe(gulpFilter('**/*.js'))
       /*
        * If you need the scripts to be loaded in a different order,
@@ -63,7 +65,9 @@ gulp.task('vendorJS', function(){
 
 gulp.task('vendorCSS', function(){
     //concatenate vendor CSS files
-    gulpBowerFiles()
+    return gulp.src(mainBowerFiles(), {
+            base: './bower_components'
+    })
     .pipe(gulpFilter('**/*.css'))
         .pipe(plugins.concat('lib.css'))
         .pipe(gulp.dest('./build/styles'));
@@ -71,7 +75,9 @@ gulp.task('vendorCSS', function(){
 
 gulp.task('vendorFonts', function(){
     //concatenate vendor CSS files
-    gulpBowerFiles()
+    return gulp.src(mainBowerFiles(), {
+            base: './bower_components'
+    })
     .pipe(gulpFilter('**/fonts/*'))
     .pipe(plugins.flatten())
     .pipe(gulp.dest('./build/fonts'));

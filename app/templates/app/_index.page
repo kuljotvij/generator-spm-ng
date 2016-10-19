@@ -7,8 +7,8 @@
     <title><%= appName %></title>
   </head>
   <body>
-    <div id="sl" ng-app="<%= appName %>">
-      <div id="sl-body">
+    <div id="tkb" ng-app="<%= appName %>">
+      <div id="tkb-body">
         <div class="container" ng-view="ng-view"></div>
       </div>
     </div>

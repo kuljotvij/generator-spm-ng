@@ -19,7 +19,6 @@
     "angular": "^1.2.16",
     "angular-route": "^1.2.16"<% if(ngforce) { %>,
     "ngForce": "https://github.com/kuljotvij/ngForce-one.git#master"<% } %> <% if(bootstrap) { %>,
-    "bootstrap": "https://github.com/twbs/bootstrap.git"<% } %>
+    "bootstrap": "https://github.com/kuljotvij/ui-tkb-bootstrap"<% } %>
   }
 }
-
