@@ -11,7 +11,7 @@
   </head>
   <body>
     <div <% if(bootstrap) { %> id="tkb" <% } %> ng-app="<%= appName %>">  
-        <div <% if(bootstrap) { %> id="tkb-body" class="container" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
+        <div <% if(bootstrap) { %> id="tkb-body" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
     </div>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/lib.js')}"></apex:includescript>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/templates.js')}"></apex:includescript>
