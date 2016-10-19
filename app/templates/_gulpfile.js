@@ -90,7 +90,7 @@ gulp.task('customFonts', function() {
     .pipe(gulp.dest('./build/fonts'));
   <% } %>
   <% if(slds) { %>
-  gulp.src('./node_modules/salesforce-lightning-design-system/assets/**/*')
+  gulp.src('./bower_components/salesforce-lightning-design-system/assets/**/*')
     .pipe(gulp.dest('./build/assets'));
   <% } %>  
 });
