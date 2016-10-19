@@ -4,3 +4,29 @@
     {{thing}}
     </li>
 </ul>
+
+<% if(slds) { %>
+<div class="slds-button-group" role="group">
+  <button class="slds-button slds-button--icon-border">
+    <svg aria-hidden="true" class="slds-button__icon">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chart"></use>
+    </svg>
+    <span class="slds-assistive-text">Charts</span>
+  </button>
+  <button class="slds-button slds-button--icon-border">
+    <svg aria-hidden="true" class="slds-button__icon">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#filterList"></use>
+    </svg>
+    <span class="slds-assistive-text">Filter List</span>
+  </button>
+  <button class="slds-button slds-button--icon-more" aria-haspopup="true">
+    <svg aria-hidden="true" class="slds-button__icon">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings"></use>
+    </svg>
+    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
+      <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+    </svg>
+    <span class="slds-assistive-text">Settings</span>
+  </button>
+</div>
+<% } %>
