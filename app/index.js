@@ -37,6 +37,11 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
         default: false
       }, {
         type: 'confirm',
+        name: 'slds',
+        message: 'Include SLDS?',
+        default: false
+      }, {
+        type: 'confirm',
         name: 'ngforce',
         message: 'Include ngForce?',
         default: false
@@ -45,6 +50,7 @@ var GulpNgGenerator = yeoman.generators.Base.extend({
     this.prompt(prompts, function (props) {
       this.appName = props.appName;
       this.bootstrap = props.bootstrap;
+      this.slds = props.slds;
       this.ngforce = props.ngforce;
       done();
     }.bind(this));
