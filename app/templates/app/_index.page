@@ -15,7 +15,7 @@
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/lib.js')}"></apex:includescript>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/templates.js')}"></apex:includescript>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/main.js')}"></apex:includescript>
-    <c:ngForce></c:ngForce>
+    <% if(ngforce) { %><c:ngForce></c:ngForce><% } %>
   </body>
 
 </apex:page>
