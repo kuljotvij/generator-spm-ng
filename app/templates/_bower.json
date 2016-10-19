@@ -1,0 +1,24 @@
+{
+  "name": "<%= appName %>",
+  "main": "app.js",
+  "version": "0.0.0",
+  "authors": [
+    "jessie <jessie@apollo.com.ph>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.1",
+    "angular": "^1.2.16",
+    "angular-route": "^1.2.16",
+    "ngForce": "https://github.com/noeticpenguin/ngForce.git#master"<% if(bootstrap) { %>,
+    "bootstrap": "https://github.com/twbs/bootstrap.git"<% } %>
+  }
+}
