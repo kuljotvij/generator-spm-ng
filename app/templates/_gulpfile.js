@@ -85,8 +85,14 @@ gulp.task('vendorFonts', function(){
 
 gulp.task('customFonts', function() {
   //concatenate vendor CSS files
+  <% if(bootstrap) { %>
   gulp.src('./app/styles/fonts/**')
     .pipe(gulp.dest('./build/fonts'));
+  <% } %>
+  <% if(slds) { %>
+  gulp.src('./node_modules/salesforce-lightning-design-system/assets/**/*')
+    .pipe(gulp.dest('./build/assets'));
+  <% } %>  
 });
 
 gulp.task('copy-index', function() {
