@@ -1,4 +1,4 @@
-<apex:page>
+<apex:page showHeader="false" sidebar="false">
   <apex:stylesheet value="{!URLFOR($Resource.<%= appName %>, 'styles/lib.css')}"></apex:stylesheet>
   <apex:stylesheet value="{!URLFOR($Resource.<%= appName %>, 'styles/main.css')}"></apex:stylesheet>
   <% if(slds) { %>
