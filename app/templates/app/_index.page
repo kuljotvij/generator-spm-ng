@@ -10,13 +10,12 @@
     <title><%= appName %></title>
   </head>
   <body>
-    <div <% if(bootstrap) { %> id="tkb" <% } %> ng-app="<%= appName %>">  
-        <div <% if(bootstrap) { %> id="tkb-body" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
+    <div id="tkb" ng-app="<%= appName %>">  
+        <div id="tkb-body" <% if(slds) { %> class="slds tkb" <% } %> ng-view="ng-view"></div>
     </div>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/lib.js')}"></apex:includescript>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/templates.js')}"></apex:includescript>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/main.js')}"></apex:includescript>
     <% if(ngforce) { %><c:ngForce></c:ngForce><% } %>
   </body>
-
 </apex:page>
