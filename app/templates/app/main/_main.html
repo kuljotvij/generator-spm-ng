@@ -30,3 +30,59 @@
   </button>
 </div>
 <% } %>
+
+<% if(bootstrap) { %>
+<div role="dialog" aria-labelledby="dialog-heading-id" class="slds-docked-composer slds-grid slds-grid--vertical slds-nowrap slds-is-open">
+  <header class="slds-docked-composer__header slds-grid slds-grid--align-spread slds-shrink-none">
+    <div class="slds-media slds-media--center">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-call">
+          <svg aria-hidden="true" class="slds-icon slds-icon--small">
+            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#call"></use>
+          </svg>
+          <span class="slds-assistive-text">Call Icon</span>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <h2 id="dialog-heading-id" aria-live="polite" aria-atomic="true">Lei Chan - Connecting...</h2>
+      </div>
+    </div>
+    <div class="slds-docked-composer__actions">
+      <button class="slds-button slds-button--icon slds-button--icon-inverse">
+        <svg aria-hidden="true" class="slds-button__icon">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#minimize_window"></use>
+        </svg>
+        <span class="slds-assistive-text">Minimize window</span>
+      </button>
+      <button class="slds-button slds-button--icon slds-button--icon-inverse">
+        <svg aria-hidden="true" class="slds-button__icon">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#expand_alt"></use>
+        </svg>
+        <span class="slds-assistive-text">Expand Composer</span>
+      </button>
+      <button class="slds-button slds-button--icon slds-button--icon-inverse">
+        <svg aria-hidden="true" class="slds-button__icon">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+        </svg>
+        <span class="slds-assistive-text">Close</span>
+      </button>
+    </div>
+  </header>
+  <div class="slds-docked-composer__body slds-col slds-grid slds-grid--vertical slds-nowrap slds-grid--align-center">
+    <div class="slds-text-align--center slds-scrollable--y">
+      <span class="slds-avatar slds-avatar--large">
+        <img src="/assets/images/avatar2.jpg" alt="Lei Chan" />
+      </span>
+      <h3 class="slds-text-heading--large">Lei Chan</h3>
+      <ul class="slds-list--horizontal slds-grid--align-center slds-has-dividers--right slds-text-body--small">
+        <li class="slds-item">VP of Sales</li>
+        <li class="slds-item ">Acme Corporation</li>
+      </ul>
+      <p class="slds-text-heading--medium slds-m-top--medium">Connecting...</p>
+    </div>
+  </div>
+  <footer class="slds-docked-composer__footer slds-shrink-none">
+    <button class="slds-button slds-button--destructive slds-size--1-of-1">End Call</button>
+  </footer>
+</div>
+<% } %>
