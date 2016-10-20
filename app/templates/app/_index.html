@@ -11,8 +11,8 @@
     <% } %>   
   </head>
   <body>
-    <div id="tkb" ng-app="<%= appName %>">
-        <div id="tkb-body" <% if(slds) { %> class="slds tkb" <% } %> ng-view="ng-view"></div>
+    <div ng-app="<%= appName %>">
+        <div class="slds tkb" ng-view="ng-view"></div>
     </div>
     <script src="scripts/lib.js"></script>
     <script src="scripts/templates.js"></script>
