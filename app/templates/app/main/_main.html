@@ -6,32 +6,6 @@
 </ul>
 
 <% if(slds) { %>
-<div class="slds-button-group" role="group">
-  <button class="slds-button slds-button--icon-border">
-    <svg aria-hidden="true" class="slds-button__icon">
-      <use xlink:href="../resource/<%= appName %>/assets/icons/utility-sprite/svg/symbols.svg#chart"></use>
-    </svg>
-    <span class="slds-assistive-text">Charts</span>
-  </button>
-  <button class="slds-button slds-button--icon-border">
-    <svg aria-hidden="true" class="slds-button__icon">
-      <use xlink:href="../resource/<%= appName %>/assets/icons/utility-sprite/svg/symbols.svg#filterList"></use>
-    </svg>
-    <span class="slds-assistive-text">Filter List</span>
-  </button>
-  <button class="slds-button slds-button--icon-more" aria-haspopup="true">
-    <svg aria-hidden="true" class="slds-button__icon">
-      <use xlink:href="../resource/<%= appName %>/assets/icons/utility-sprite/svg/symbols.svg#settings"></use>
-    </svg>
-    <svg aria-hidden="true" class="slds-button__icon slds-button__icon--x-small">
-      <use xlink:href="../resource/<%= appName %>/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
-    </svg>
-    <span class="slds-assistive-text">Settings</span>
-  </button>
-</div>
-<% } %>
-
-<% if(bootstrap) { %>
 <div role="dialog" aria-labelledby="dialog-heading-id" class="slds-docked-composer slds-grid slds-grid--vertical slds-nowrap slds-is-open">
   <header class="slds-docked-composer__header slds-grid slds-grid--align-spread slds-shrink-none">
     <div class="slds-media slds-media--center">
@@ -85,4 +59,51 @@
     <button class="slds-button slds-button--destructive slds-size--1-of-1">End Call</button>
   </footer>
 </div>
+<% } %>
+
+<% if(bootstrap) { %>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
 <% } %>
