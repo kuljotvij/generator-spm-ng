@@ -10,8 +10,8 @@
     <title><%= appName %></title>
   </head>
   <body>
-    <div id="tkb" ng-app="<%= appName %>">  
-        <div id="tkb-body" <% if(slds) { %> class="slds tkb" <% } %> ng-view="ng-view"></div>
+    <div ng-app="<%= appName %>">  
+        <div class="slds tkb" ng-view="ng-view"></div>
     </div>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/lib.js')}"></apex:includescript>
     <apex:includescript value="{!URLFOR($Resource.<%= appName %>, 'scripts/templates.js')}"></apex:includescript>
