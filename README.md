@@ -2,28 +2,36 @@ This is a yeoman generator for an angularjs project that follows the [Best Pract
 
 It takes advantage of the gulp build tool and makes use of bower and npm for dependency management.
 
+It also allows us to incorporate some most common and useful dependencies on top of Angular App Structure creation along with sample Visualforce page that will help us to get started.
+
+Some common and useful dependencies that will prompt during installation process:
+[Bootstrap][6]
+[SLDS][7]
+[NgForce][8]
+
 -----
 
 #### GENERATED DIRECTORY STRUCTURE ####
 
-    yourApp/
-      app/
-        scripts/
-          main.js
-        styles/
-          main.css
-        views/
-          main.html
-        index.html
-      bower_components/    
-      node_modules/
-      .bowerrc
-      .gitignore
-      README.md
-      bower.json
-      gulpgile.js
-      karma-unit.js
-      package.json
+      yourAppName/
+          app/
+          scripts/
+              main.js
+          styles/
+              main.css
+          views/
+              main.html
+          index.html
+          yourAppName.page /*Sample Visualforce page*/
+          bower_components/    
+          node_modules/
+          .bowerrc
+          .gitignore
+          README.md
+          bower.json
+          gulpgile.js
+          karma-unit.js
+          package.json
 
 -----
 
@@ -35,18 +43,17 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 - all js files in the bower_components folder are concatenated into build/lib.js
 - all css files in the bower_components folder are concatenated into build/lib.css
 - index.html is copied to build/index.html
+- yourAppName.page in the app folder allows us to quick setup this in Mavensmate
 - a static server is run at port 9000 with livereload support
 - when any html, js or css file in the build folder changes, they are autoreloaded on the browser
-- karma test runner will automatically run unit tests when relevant files change
 
 -----
 
 #### Prerequisites ####
-- node.js [http://nodejs.org/][2]
-- npm [http://www.npmjs.org/][3]
-- bower [http://bower.io/][4]
-- gulp.js [http://gulpjs.com/][5]
-- karma-cli [http://karma-runner.github.io/][6]
+- [node.js][2]
+- [npm][3]
+- [bower][4]
+- [gulp.js][5]
 
 -----
 
@@ -57,11 +64,9 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 
 3) gulp
 
-4) karma start karma-unit.js
+4) open browser to http://localhost:9000
 
-5) open browser to http://localhost:9000
-
-6) start hacking
+5) gulp save
 
 ----
 
@@ -71,5 +76,6 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
   [3]: http://www.npmjs.org/
   [4]: http://bower.io/
   [5]: http://gulpjs.com/
-  [6]: http://karma-runner.github.io/
-  [7]: https://github.com/henyojess/generator-gulp-ng/issues
+  [6]: https://github.com/kuljotvij/ui-tkb-bootstrap
+  [7]: https://github.com/kuljotvij/slds-ng-gulp
+  [8]: https://github.com/kuljotvij/ngForce-one
