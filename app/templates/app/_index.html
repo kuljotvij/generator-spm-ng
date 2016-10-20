@@ -7,12 +7,12 @@
     <link href="styles/lib.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
     <% if(slds) { %>
-      <link href="assets/styles/salesforce-lightning-design-system-vf.css" rel="stylesheet" />
+    <link href="assets/styles/salesforce-lightning-design-system-vf.css" rel="stylesheet" />
     <% } %>   
   </head>
   <body>
-    <div <% if(bootstrap) { %> id="tkb" <% } %> ng-app="<%= appName %>">
-        <div <% if(bootstrap) { %> id="tkb-body" <% } %> <% if(slds) { %> class="slds" <% } %> ng-view="ng-view"></div>
+    <div id="tkb" ng-app="<%= appName %>">
+        <div id="tkb-body" <% if(slds) { %> class="slds tkb" <% } %> ng-view="ng-view"></div>
     </div>
     <script src="scripts/lib.js"></script>
     <script src="scripts/templates.js"></script>
