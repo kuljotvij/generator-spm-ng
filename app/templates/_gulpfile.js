@@ -86,7 +86,7 @@ gulp.task('vendorFonts', function(){
 gulp.task('customFonts', function() {
   //concatenate vendor CSS files
   <% if(bootstrap) { %>
-  gulp.src('./app/styles/fonts/**')
+  gulp.src('./bower_components/bootstrap/fonts/**')
     .pipe(gulp.dest('./build/fonts'));
   <% } %>
   <% if(slds) { %>
