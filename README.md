@@ -5,9 +5,9 @@ It takes advantage of the gulp build tool and makes use of bower and npm for dep
 It also allows us to incorporate some most common and useful dependencies on top of Angular App Structure creation along with sample Visualforce page that will help us to get started.
 
 Some common and useful dependencies that will prompt during installation process:
-[Bootstrap][6]
-[SLDS][7]
-[NgForce][8]
+- [Bootstrap][6]
+- [SLDS][7]
+- [NgForce][8]
 
 -----
 
